@@ -1,0 +1,67 @@
+.review_form {
+    width: 480px;
+    margin: 0 auto;
+
+    .group_Radios {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+            display: flex;
+            position: relative;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            gap: 5px;
+            width: 120px;
+
+            input {
+                position: absolute;
+                top: 28px;
+                opacity: 0;
+            }
+
+            input:checked~svg {
+                fill: #7076F4;
+            }
+
+            svg {
+                cursor: pointer;
+                transition: .3s all;
+                font-size: 2.2em;
+            }
+
+            svg:hover {
+                fill: #7076F4;
+            }
+
+
+        }
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+
+        textarea {
+            border: 3px solid #000;
+            outline: none;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 480px;
+            min-height: 150px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            transition: .6s all;
+
+            &:focus {
+                border: 3px solid #7076F4;
+            }
+
+            &:valid {
+                border: 3px solid #7076F4;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sora, sans-serif;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafc;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem;
+    gap: 15px;
+
+    .header {
+        width: 600px;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: rgb(90, 88, 88);
+            font-weight: 600;
+        }
+    }
+
+    .form {
+        position: relative;
+        background-color: #FFF;
+        margin: 0 auto;
+        max-width: 700px;
+        width: 700px;
+        border: 10px solid #7076F4;
+        border-radius: 15px;
+        padding: 1.5em;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 370px;
+
+            .inputs_container {
+                .alignInputs {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    gap: 10px;
+                    max-width: 400px;
+
+                    .groupInput {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 5px;
+                        width: 400px;
+
+                        label {
+                            font-weight: bold;
+                            align-self: flex-start;
+                        }
+
+                        input {
+                            width: 100%;
+                            border: 3px solid #000;
+                            outline: none;
+                            border-radius: 5px;
+                            box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+                            font-weight: 700;
+                            padding: 10px 15px;
+                            transition: .7s all;
+
+                            &:focus {
+                                border: 3px solid #7076F4;
+                            }
+
+                            &:valid {
+                                border: 3px solid #7076F4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .groupButtons {
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+
+                button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 4px solid #000;
+                    cursor: pointer;
+                    transition: .4s all;
+                    border-radius: 8px;
+                    font-size: 1em;
+                    background-color: #FFF;
+                    font-weight: 700;
+                    width: 130px;
+                    padding: 3px 1em;
+
+                    svg {
+                        font-size: 2em;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                        border-color: #7076F4;
+                    }
+                }
+            }
+        }
+    }
+}

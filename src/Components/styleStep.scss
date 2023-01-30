@@ -1,0 +1,43 @@
+.Steps {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    display: flex;
+
+    .identificator {
+        display: flex;
+        width: 120px;
+        background-color: #FFF;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+        gap: 2px;
+        font-weight: 600;
+        z-index: 2;
+
+        svg {
+            font-size: 1.9em;
+        }
+    }
+
+    .active {
+        svg {
+            font-weight: bold;
+            fill: #7076F4;
+        }
+    }
+
+    hr {
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+        border: none;
+        top: 50%;
+        bottom: 50%;
+        position: absolute;
+        z-index: 1;
+    }
+
+}

@@ -5,3 +5,5 @@ Este projeto tem o intuito de dinamizar o processo de avaliação, o qual é fra
 Projeto realizado com a finalidade de aperfeiçoar conceitos de React, a exemplo da componentização, hooks customizados e formulário.
 
 ReactJs, SCSS;
+
+Lembre-se de instalar as dependências (npm install) e inicializar o projeto (npm run dev)
